@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--box icons-->
-    <link rel="stylesheet" href ="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+   
     <!--css-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
     <title>Document</title>
 </head>
@@ -20,56 +20,155 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            <i class='bx bx-home'></i>Home
+                        <a href="#" class="nav__link active-link">
+                            <i class='bx bx-home nav__icon'></i>Home
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#profile" class="nav__link">
-                            <i class='bx bx-user'></i>Profile
+                            <i class='bx bx-user nav__icon'></i>Profile
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#education" class="nav__link">
-                            <i class='bx bx-book'></i>Education
+                        <a href="#educations" class="nav__link">
+                            <i class='bx bx-book nav__icon'></i>Education
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">
-                            <i class='bx bx-receipt'></i></i>Skills
+                            <i class='bx bx-receipt nav__icon'></i></i>Skills
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#experience" class="nav__link">
-                            <i class='bx bx-briefcase-alt' ></i>Experiences
+                            <i class='bx bx-briefcase-alt nav__icon' ></i>Expérience
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#diplome" class="nav__link">
-                            <i class='bx bx-award'></i>Diplomes
+                        <a href="#diplomes" class="nav__link">
+                            <i class='bx bx-award nav__icon'></i>Diplômes
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#references" class="nav__link">
-                            <i class='bx bx-link-external'></i>References
+                            <i class='bx bx-link-external nav__icon'></i>Références
                         </a>
                     </li>
                 </ul>
             </div>
 
-            <div class="nav__toogle" id="nav-toogle">
+            <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-grid-alt'></i>
             </div>
         </nav>
     </header>
     
     <main class="1-main bd-container">
+        <!-- all elements with in this div, is generated in pdf -->
+        <div class="resume">
+            <div class="resume__left">
+                <!-- home -->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="./img/portrait.png" alt="" class="home__img">
+
+                            <h1 class="home__title">Florent <b>MERLIN</b></h1>
+                            <h3 class="home__profession">Developpeur Web Junior</h3>
+                        
+                            <!-- button to download your cv save in the pdf folder. available -->
+                            <div>
+                                <a download="" href="./pdf/florent-cv-dev-web.pdf" class="home__button-movil">Download</a>
+                            </div>
+                        </div>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class='bx bx-map home__icon'></i>77 rue Roger Salengro - 62230 OUTREAU
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-envelope home__icon'></i>florentmerlin.pro@gmail.com
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-phone home__icon'></i>07.86.94.33.17
+                            </span>
+                        </div>
+                    </div>
+                </section>
+               
+
+                <!-- theme change button -->
+
+                <!-- button to generate and download the pdf. available for desktop -->
+                
+                <!-- social -->
+                <section class="social section">
+                    <h2 class="section-title">SOCIAL</h2>
+
+                    <div class="social__container bd-grid">
+                        <a href="https://www.linkedin.com" target="_blank" class="social__link">
+                            <i class='bx bxl-linkedin-square social__icon'></i>@florentmerlin
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank" class="social__link">
+                            <i class='bx bxl-facebook social__icon'></i>@florentmerlin
+                        </a>
+                    </div>
+                </section>
+
+                <!-- profile -->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profile</h2>
+
+                    <p class="profile__description">
+                    Ambitieux et extrêmement motivé, je souhaite continuer à développer 
+                    mes compétences professionnelles. 
+                    Rigoureux et méthodique au travail, j'ai confiance 
+                    en mes capacités d'analyse et d'adaptation 
+                    pour mener à bien les missions qui me sont confiées.
+                    Ma forte sociabilité, ma capacité d'écoute et de compréhension
+                    me permettent de trouver et d'apporter les solutions les plus
+                    appropriées aux besoin du client.
+                    </p>
+                </section>
+
+                <!-- education -->
+                <section class="education section">
+                    <h2 class="section-education">EDUCATION</h2>
+
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                            </div>
+                        </div>
+                        <a href="" class="education__link">EDUCATION
+
+                        </a>
+                    </div>
+                </section>
+                
+                <!-- skills -->
+
+            </div>
+            <div class="resume__right">
+                <!-- exprience -->
+
+                <!-- diplomes -->
+
+                <!-- references -->
+
+                <!-- languages -->
+
+                <!-- interests -->
+            </div>
+        </div>
+
     </main>
 
     <!--scroll top-->
@@ -78,6 +177,6 @@
     <script src=""></script>
 
     <!--main js-->
-    <script src="assets/js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

@@ -37,13 +37,16 @@
 }
 
 /* base */
-*,::before,::after{
+*,
+::before,
+::after{
     box-sizing: border-box;
 }
 
-html {
+html{
     scroll-behavior: smooth;
 }
+
 /* variable dark theme */
 
 /* button dark/light */
@@ -53,7 +56,7 @@ html {
 /* generate pdf button */
 
 /* classes modified to reduct size and print on A4 sheet */ 
-body {
+body{
     margin: 0 0 var(--header-height) 0;
     padding: 0;
     font-family: var(--body-font);
@@ -61,34 +64,36 @@ body {
     background-color: var(--body-color);
     color: var(--text-color);
 }
-h1,h2,h3,ul,p {
-    margin: 0;
+
+h1,h2,h3,ul,p{
+  margin: 0;
 }
 
-h1,h2,h3 {
-    color: var(--title-color);
-    font-weight: var(--font-medium);
+h1,h2,h3{
+  color: var(--title-color);
+  font-weight: var(--font-medium);
 }
+
 ul{
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
-a {
-    text-decoration: none;
+a{
+  text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+img{
+  max-width: 100%;
+  height: auto;
 }
 
 /* class css */
-.section {
+.section{
     padding: 1.5rem 0;
 }
 
-.section-title {
+.section-title{
     font-size: var(--h2-font-size);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
@@ -99,19 +104,20 @@ img {
 }
 
 /* layout */
-.bd-container {
+.bd-container{
     max-width: 968px;
     width: calc(100% - 3rem);
     margin-left: var(--mb-3);
     margin-right: var(--mb-3);
 }
 
-.bd-grid {
+.bd-grid{
     display: grid;
+    gap: 1.5rem;
 }
 
-.l-header {
-    width: 100px;
+.l-header{
+    width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -122,7 +128,7 @@ img {
 }
 
 /* nav */
-.nav {
+.nav{
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
@@ -130,11 +136,11 @@ img {
 }
 
 @media screen and (max-width: 968px){
-    .nav__menu {
+    .nav__menu{
         position: fixed;
-        bottom: var(--header-height);
+        bottom: -100%;
         left: 0;
-        width: 100px;
+        width: 100%;
         padding: 2rem 1.5rem;
         background-color: var(--body-color);
         box-shadow: 0 1px 4px rgba(0, 0, 0,.1);
@@ -145,25 +151,146 @@ img {
 }
 
 .nav__logo,
-.nav__toogle {
+.nav__toggle{
     color: var(--title-color);
     font-weight: var(--font-medium);   
 }
 
-.nav__toogle {
+.nav__toggle{
     font-size: 1.2rem;
     cursor: pointer;
 }
-/* show menu */
 
+.nav__item{
+    align-items: center;
+}
+
+.nav__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+    font-weight: var(--font-medium);
+}
+
+.nav__link:hover{
+    color: var(--title-color); 
+}
+
+.nav__icon{
+    font-size: 1.2rem;
+    margin-bottom: var(--mb-1);
+}
+
+/* show menu */
+.show-menu{
+    bottom: var(--header-height);
+}
 
 
 /* active menu link */
+.active-link{
+    color: var(--title-color);
+}
 
 
+/** home ********/
+.home{
+    position: relative;
+}
 
-/* home */
+.home__container{
+    gap: 3rem;
+}
+
+.home__data{
+    gap: .5rem;
+    text-align: center;
+}
+
+.home__img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    justify-self: center;
+    margin-bottom: var(--mb-1);
+}
+
+.home__title{
+    font-size:var(--h1-font-size);
+   
+}
+
+.home__profession{
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-1);
+}
 
 
+.home__address{
+    gap: 1rem;
+}
 
-/* social */
+.home__information{
+    display: flex;
+    align-items: center;
+    font-size: var(--small-font-size)
+}
+
+.home__icon{
+    font-size: 1.2rem;
+    margin-right:.25rem;
+}
+
+.home__button-movil{
+    display: inline-block;
+    border: 2px solid var(--text-color);
+    color: var(--title-colorle);
+    padding: .25rem .85rem;
+    border-radius: .25rem;
+    transition: .3s;
+    font-weight: var(--font-medium);
+    margin-top: var(--mb-3);
+}
+
+.home__button-movil:hover{
+    background-color: var(--text-color);
+    color: var(--container-color);
+}
+
+/** social ********/
+.social__container{
+    grid-template-columns: max-content;
+    gap: 1rem;
+}
+
+.social__link{
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+.social__link:hover{
+    color: var(--title-color);
+}
+
+.social__icon{
+    font-size:1.2rem;
+    margin-right: .25rem;
+}
+
+/** profile  ********/
+.profile__description{
+    text-align: center;
+}
+
+/** education  *********/
+
+/** skills  ********/
