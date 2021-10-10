@@ -1,6 +1,7 @@
  /* google font  */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/* varable css */
+ /* varable css */
 :root {
     --header-height: 3rem;
 
@@ -13,7 +14,7 @@
     --body-color: #fcfcfc;
 
     /* font & typography */
-    --body-font: 'portrait', sans-serif;
+    --body-font: 'Poppins', sans-serif;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
@@ -36,7 +37,7 @@
 }
 
 /* base */
-*,::befor,::after{
+*,::before,::after{
     box-sizing: border-box;
 }
 
@@ -53,7 +54,7 @@ html {
 
 /* classes modified to reduct size and print on A4 sheet */ 
 body {
-    margin: 0 0  var(--header-height) 0;
+    margin: 0 0 var(--header-height) 0;
     padding: 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -64,7 +65,7 @@ h1,h2,h3,ul,p {
     margin: 0;
 }
 
-h1,h2,h3{
+h1,h2,h3 {
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
@@ -73,21 +74,21 @@ ul{
     list-style: none;
 }
 
-a{
-    text-decoration: none
+a {
+    text-decoration: none;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 
 /* class css */
-.section{
+.section {
     padding: 1.5rem 0;
 }
 
-.section-title{
+.section-title {
     font-size: var(--h2-font-size);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
@@ -96,14 +97,63 @@ img{
     text-align: center;
     margin-bottom: var(--mb-3);
 }
+
 /* layout */
+.bd-container {
+    max-width: 968px;
+    width: calc(100% - 3rem);
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+}
 
+.bd-grid {
+    display: grid;
+}
 
+.l-header {
+    width: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+    box-shadow: 0 -1px 4px rgba(0, 0, 0,.1);
+    transition: .3s;
+}
 
 /* nav */
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+@media screen and (max-width: 968px){
+    .nav__menu {
+        position: fixed;
+        bottom: var(--header-height);
+        left: 0;
+        width: 100px;
+        padding: 2rem 1.5rem;
+        background-color: var(--body-color);
+        box-shadow: 0 1px 4px rgba(0, 0, 0,.1);
+        border-radius: 1rem 1rem 0 0;
+        z-index: var(--z-fixed);
+        transition: 0.3s;
+    }
+}
 
+.nav__logo,
+.nav__toogle {
+    color: var(--title-color);
+    font-weight: var(--font-medium);   
+}
 
+.nav__toogle {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
 /* show menu */
 
 
