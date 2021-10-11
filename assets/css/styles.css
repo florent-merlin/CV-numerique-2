@@ -89,7 +89,7 @@ body.scale-cv{
     top: 2.2rem;
     font-size: 1.2rem;
     color: var(--text-color);
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .generate-pdf:hover{
@@ -100,7 +100,6 @@ body.scale-cv{
 .scale-cv .change-theme,
 .scale-cv .generate-pdf{
     display: none;
-
 }
 
 .scale-cv .bd-container{
@@ -202,7 +201,7 @@ h1,h2,h3{
 
 ul{
   padding: 0;
-  text-align: center
+  list-style: none;
 }
 
 a{
@@ -226,7 +225,7 @@ img{
     text-transform: uppercase;
     letter-spacing: .35rem;
     text-align: center;
-    margin-bottom: var(--mb-3);
+    margin-bottom: -10px;
 }
 
 /* layout */
@@ -328,7 +327,7 @@ img{
 
 /** home ********/
 .home{
-    height:100vh;
+    height: auto;
     position: relative;
 }
 
@@ -351,23 +350,27 @@ img{
 
 .home__title{
     font-size:var(--h1-font-size);
-   
+    margin-bottom: -15%;
+    margin-top: var(--mb-);
 }
 
 .home__profession{
     font-size: var(--normal-font-size);
-    margin-bottom: var(--mb-1);
+    margin-top: 1.25rem;
+    margin-bottom: .15rem;
 }
-
 
 .home__adress{
     gap: 1rem;
+    margin-top: -15px;
+    margin-bottom: -25px;
 }
 
 .home__information{
     display: flex;
     align-items: center;
-    font-size: var(--small-font-size)
+    font-size: var(--small-font-size);
+    margin-top: .22rem;
 }
 
 .home__icon{
@@ -391,8 +394,23 @@ img{
     color: var(--container-color);
 }
 
+/** infomations ********/
+
+/* .informations__link{
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+.informations__link:hover{
+    color: var(--title-color);
+} */
+
 /** social ********/
+
 .social__container{
+    margin-top: -25px;
     grid-template-columns: max-content;
     gap: 1rem;
 }
@@ -415,11 +433,11 @@ img{
 
 /** profile  ********/
 .profile__description{
-    height: 100vh;
+    /* height: 100vh; */
     text-align: center;
 }
 
-/** education  *********/
+/** education & experience *********/
 .education__content,
 .experience__content{
     display: flex;
@@ -471,13 +489,17 @@ img{
 }
 
 /** skills & languages ********/
+.skills__data{
+    display: grid;
+    justify-content: center;
+}
+
 .skills__content,
 .languages__content{
     grid-template-columns: repeat(2, 1fr);
 }
 
-.skills__content,
-.languages__content{
+.skills__content{
     gap: 0;
 }
 
@@ -487,7 +509,7 @@ img{
     align-items: center;
     margin-bottom: var(--mb-3);
 }
-.skills__circle,
+
 .languages__circle{
     display: inline-block;
     width: 5px;
@@ -609,7 +631,8 @@ img{
     .generate-pdf{
         display: inline-block;
     }
-    .section-title,
+    
+    /* .section-title, */
     .profile__description{
         text-align: initial;
     }
