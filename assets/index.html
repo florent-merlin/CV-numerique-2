@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
 
     <title>Document</title>
 </head>
+
 <body>
     <!--header-->
     <header class="l-header" id="header">
@@ -71,7 +73,7 @@
     
     <main class="1-main bd-container">
         <!-- all elements with in this div, is generated in pdf -->
-        <div class="resume">
+        <div class="resume" id="area-cv">
             <div class="resume__left">
                 <!-- home -->
                 <section class="home" id="home">
@@ -100,13 +102,15 @@
                             </span>
                         </div>
                     </div>
+                    <!-- theme change button -->
+                    <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+                    
+                    <!-- button to generate and download the pdf. available for desktop -->
+                    <i class='bx bx-download generate-pdf' title="Generate pdf" id="resume-button"></i>
                 </section>
                
 
-                <!-- theme change button -->
-
-                <!-- button to generate and download the pdf. available for desktop -->
-                
+               
                 <!-- social -->
                 <section class="social section">
                     <h2 class="section-title">SOCIAL</h2>
@@ -203,33 +207,55 @@
                     <div class="skills__content bd-grid">
                         <ul class="skills__data">
                             <li class="skills__name">
-                                <span class="skills__circle">HTML</span>
+                                <i class='bx bxl-html5'></i>
+                                <span>HTML</span>
                             </li>
 
                             <li class="skills__name">
-                                <span class="skills__circle">CSS</span>
+                                <i class='bx bxl-css3'></i>
+                                <span>CSS</span>
                             </li>
 
                             <li class="skills__name">
-                                <span class="skills__circle">PHP</span>
+                                <i class='bx bxl-php'></i>
+                                <span>PHP</span>
                             </li>
 
                             <li class="skills__name">
-                                <span class="skills__circle">JavaScript</span>
+                                <i class='bx bxl-javascript'></i>
+                                <span>JavaScript</span>
+                            </li> 
+                            
+                            <li class="skills__name">
+                                <i class='bx bxl-wordpress'></i>
+                                <span>wordpress</span>
                             </li>
                         </ul>
 
                         <ul class="skills__data">
-                            <li class="skills__name">
-                                <span class="skills__circle">MySql</span>
+                           <li class="skills__name">
+                                <i class='bx bxl-bootstrap'></i>
+                                <span>bootstrap</span>
                             </li>
 
                             <li class="skills__name">
-                                <span class="skills__circle">Mongo DB</span>
+                                <i class='bx bxl-trello'></i>
+                                <span>Trello</span>
                             </li>
 
                             <li class="skills__name">
-                                <span class="skills__circle">React</span>
+                                <i class='bx bxl-blender'></i>
+                                <span>blender</span>
+                            </li>
+
+                            <li class="skills__name">
+                                <i class='bx bxl-figma'></i>
+                                <span>Figma</span>
+                            </li>
+
+                            <li class="skills__name">
+                                <i class='bx bxl-discord-alt'></i>
+                                <span>Discord</span>
                             </li>
                         </ul>
                     </div>
@@ -239,33 +265,33 @@
                     <div class="skills__content bd-grid">
                         <ul class="skills__data">
                             <li class="skills__name">
-                                <span class="skills__circle"> gestion de projet</span>
+                                <span> gestion de projet</span>
                             </li>
 
                             <li class="skills__name">
-                                <span class="skills__circle"> Travaille en équipe ou de manière indépendante</span>
+                                <span> Travaille en équipe ou de manière indépendante</span>
                             </li>
 
                             <li class="skills__name">
-                                <span class="skills__circle"> Méthodes agiles et Scrum</span>
+                                <span> Méthodes agiles et Scrum</span>
                             </li>
 
                             <li class="skills__name">
-                                <span class="skills__circle"> Sécurité et RGPD</span>
+                                <span> Sécurité et RGPD</span>
                             </li>
                         </ul>
 
                         <ul class="skills__data">
                             <li class="skills__name">
-                                <span class="skills__circle"> Création de base de données</span>
+                                <span> Création de base de données</span>
                             </li>
 
                             <li class="skills__name">
-                                <span class="skills__circle"> Maquetter une application</span>
+                                <span> Maquetter une application</span>
                             </li>
 
                             <li class="skills__name">
-                                <span class="skills__circle"> Réaliser et Développer une interface et/ou une
+                                <span> Réaliser et Développer une interface et/ou une
                                 interface utilisateur web dynamique et responsive</span>
                             </li>
                         </ul>
@@ -404,51 +430,46 @@
 
                     <div class="interests__container bd-grid">
                         <div class="interests__content">
-                            <i class='bx bx-planet'></i>/<i class='bx bx-atom'></i>/<i class='bx bx-vial'></i>
+                            <i class='bx bx-atom interests__icon'></i>
                             <span class="interests__name">Sciences</span> 
                         </div>
-                    </div>
-
-                    <div class="interests__container bd-grid">
+                  
                         <div class="interests__content">
-                            <i class='bx bx-trophy'></i>/<i class='bx bx-medal'></i>
-                            <span class="interests__name">Sports</span> 
+                            <i class='bx bx-trophy'></i>
+                            <span class="interests__name">Sport</span> 
                         </div>
-                    </div>
-
-                    <div class="interests__container bd-grid">
+                    
                         <div class="interests__content">
-                            <i class='bx bx-line-chart'></i>/<i class='bx bx-money'></i>
+                            <i class='bx bx-money interests__icon'></i>
                             <span class="interests__name">Finance</span> 
                         </div>
-                    </div>
-
-                    <div class="interests__container bd-grid">
+               
                         <div class="interests__content">
-                            <i class='bx bx-bitcoin'></i>/<i class='bx bxs-coin'></i>
-                            <span class="interests__name">Crypto Monnaie</span> 
+                            <i class='bx bx-bitcoin interests__icon'></i>
+                            <span class="interests__name">Crypto</span> 
                         </div>
-                    </div>
 
-                    <div class="interests__container bd-grid">
                         <div class="interests__content">
-                            <i class='bx bxl-baidu'></i>
+                            <i class='bx bxs-book  interests__icon'></i>
+                            <span class="interests__name">Lecture</span> 
+                        </div>
+                   
+                        <div class="interests__content">
+                            <i class='bx bxl-baidu interests__icon'></i>
                             <span class="interests__name">Animaux</span> 
                         </div>
                     </div>
-
                 </section>
-
-
-
             </div>
         </div>
     </main>
 
     <!--scroll top-->
-    
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
     <!--html2pdf-->
-    <script src=""></script>
+    <script src="./js/html2pdf.bundle.min.js"></script>
 
     <!--main js-->
     <script src="./js/main.js"></script>
