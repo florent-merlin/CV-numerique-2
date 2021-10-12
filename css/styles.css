@@ -226,6 +226,7 @@ img{
     letter-spacing: .35rem;
     text-align: center;
     margin-bottom: -10px;
+    margin-top: 4%;
 }
 
 /* layout */
@@ -327,7 +328,7 @@ img{
 
 /** home ********/
 .home{
-    height: auto;
+    height: 100vh;
     position: relative;
 }
 
@@ -336,41 +337,43 @@ img{
 }
 
 .home__data{
+    margin-top: 23%;
     gap: .5rem;
     text-align: center;
 }
 
 .home__img{
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     justify-self: center;
-    margin-bottom: var(--mb-1);
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
 
 .home__title{
     font-size:var(--h1-font-size);
-    margin-bottom: -15%;
-    margin-top: var(--mb-);
+    margin-bottom: -5%;
+    margin-top: var(--mb-1);
 }
 
 .home__profession{
     font-size: var(--normal-font-size);
-    margin-top: 1.25rem;
-    margin-bottom: .15rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .home__adress{
     gap: 1rem;
-    margin-top: -15px;
-    margin-bottom: -25px;
+    margin-top: 10%;
+    margin-bottom: 15px;
 }
 
 .home__information{
     display: flex;
     align-items: center;
     font-size: var(--small-font-size);
-    margin-top: .22rem;
+    margin-top: 2%;
 }
 
 .home__icon{
@@ -386,7 +389,8 @@ img{
     border-radius: .25rem;
     transition: .3s;
     font-weight: var(--font-medium);
-    margin-top: var(--mb-3);
+    margin-top: var(--mb-2);
+    
 }
 
 .home__button-movil:hover{
@@ -396,7 +400,7 @@ img{
 
 /** infomations ********/
 
-/* .informations__link{
+.informations__link{
     display: inline-flex;
     align-items: center;
     font-size: var(--small-font-size);
@@ -405,12 +409,12 @@ img{
 
 .informations__link:hover{
     color: var(--title-color);
-} */
+}
 
 /** social ********/
 
 .social__container{
-    margin-top: -25px;
+    margin-top: 25px;
     grid-template-columns: max-content;
     gap: 1rem;
 }
@@ -433,7 +437,7 @@ img{
 
 /** profile  ********/
 .profile__description{
-    /* height: 100vh; */
+    height: auto;
     text-align: center;
 }
 
@@ -487,16 +491,46 @@ img{
 .education__year{
     font-size: var(--smaller-font-size);
 }
+/* technology */
+.technology__data{
+    display: grid;
+    justify-content: center;
+    margin-top: 40%;
+}
+.technology__content{
+    padding-top: 5%;
+    margin-bottom: -5%;
+    grid-template-columns: repeat(2, 1fr);
+    /* display: flex;
+    flex-flow: wrap; */
+}
+
+.technology__name{
+    align-items: center;
+    margin-bottom: var(--mb-3);
+}
 
 /** skills & languages ********/
 .skills__data{
     display: grid;
     justify-content: center;
+    margin-top: 40%;
 }
 
-.skills__content,
-.languages__content{
+.skills__content{
+    padding-top: 5%;
+    margin-bottom: -5%;
     grid-template-columns: repeat(2, 1fr);
+    /* display: flex;
+    flex-flow: wrap; */
+}
+
+.languages__content{
+    margin-top: -15%;
+    margin-bottom: -5%;
+    grid-template-columns: repeat(2, 1fr);
+    /* display: flex;
+    flex-flow: wrap; */
 }
 
 .skills__content{
@@ -505,12 +539,12 @@ img{
 
 .skills__name,
 .languages__name{
-    display: flex;
+    display: wrap;
     align-items: center;
     margin-bottom: var(--mb-3);
 }
 
-.languages__circle{
+.skills__circle{
     display: inline-block;
     width: 5px;
     height: 5px;
@@ -543,10 +577,26 @@ img{
     font-size: var(--h3-font-size);
 }
 
+/** technology ***********/
+#technology{
+    /* display: block; */
+    /* align-items: center; */
+    height: 100vh;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    
+
+}
+
 /** interests ********/
 .interests__container{
     grid-template-columns: repeat(3, 1fr);
     margin-top: var(--mb-2);
+}
+
+.languages__container{
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 15%
 }
 
 .interests__content{
@@ -555,7 +605,16 @@ img{
     align-items: center;
 }
 
-.interests__icon{
+.languages__content{
+    padding-top: 15%;
+    margin-bottom: -15%;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    /* flex-flow: wrap; */
+}
+
+.interests__icon,
+.technology__icon{
     font-size: 1.5rem;
     color: var(--text-color-light);
     margin-bottom: .25rem;
