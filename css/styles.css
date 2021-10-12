@@ -328,7 +328,6 @@ img{
 
 /** home ********/
 .home{
-    height: 100vh;
     position: relative;
 }
 
@@ -414,7 +413,6 @@ img{
 /** social ********/
 
 .social__container{
-    margin-top: 25px;
     grid-template-columns: max-content;
     gap: 1rem;
 }
@@ -424,6 +422,7 @@ img{
     align-items: center;
     font-size: var(--small-font-size);
     color: var(--text-color);
+    margin-bottom: 5%;
 }
 
 .social__link:hover{
@@ -438,7 +437,13 @@ img{
 /** profile  ********/
 .profile__description{
     height: auto;
+    margin-bottom: 15%;
+    margin-top: 15%;
     text-align: center;
+}
+
+#profile{
+    margin-top:10%;
 }
 
 /** education & experience *********/
@@ -514,15 +519,21 @@ img{
 .skills__data{
     display: grid;
     justify-content: center;
-    margin-top: 40%;
+    margin-top: 2%;
 }
 
 .skills__content{
     padding-top: 5%;
-    margin-bottom: -5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.softskills__content{
+    padding-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
     grid-template-columns: repeat(2, 1fr);
-    /* display: flex;
-    flex-flow: wrap; */
 }
 
 .languages__content{
@@ -546,11 +557,11 @@ img{
 
 .skills__circle{
     display: inline-block;
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 2px;
     background-color: var(--text-color);
-    border-radius:50%;
-    margin-right: 2.75rem;
+    border-radius: 25%;
+    margin-right: 1.25rem;
 }
 
 /** certifications ********/
@@ -579,9 +590,8 @@ img{
 
 /** technology ***********/
 #technology{
-    /* display: block; */
-    /* align-items: center; */
-    height: 100vh;
+    display: block;
+    align-items: center;
     margin-top: 25%;
     margin-bottom: 25%;
     
@@ -591,7 +601,8 @@ img{
 /** interests ********/
 .interests__container{
     grid-template-columns: repeat(3, 1fr);
-    margin-top: var(--mb-2);
+    margin-top: 10%;
+    margin-bottom: 10%; 
 }
 
 .languages__container{
@@ -603,6 +614,8 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
 
 .languages__content{
