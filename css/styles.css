@@ -27,9 +27,9 @@
     --font-semi-bold: 600;
 
     /* margin */
-    --mb-1: .5rem;
+    --mb-1: 1.5rem;
     --mb-2: 1rem;
-    --mb-3: 1.5rem;
+    --mb-3: 1rem;
 
     /* z-index */
     --z-tooltip: 10;
